@@ -1,6 +1,7 @@
 {
     "name": "guilhermednt/ninja-mutex-bundle",
     "description": "Very simple bundle wrapper for ninja-mutex",
+    "type": "symfony-bundle",
     "require": {
         "arvenil/ninja-mutex": "0.4.*"
     },
