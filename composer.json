@@ -6,9 +6,9 @@
         "arvenil/ninja-mutex": "0.4.*"
     },
     "autoload": {
-        "psr-0": { "Donato\\NinjaMutexBundle": "" }
+        "psr-0": { "NinjaMutex\\NinjaMutexBundle": "" }
     },
-    "target-dir": "Donato/NinjaMutexBundle",
+    "target-dir": "NinjaMutex/NinjaMutexBundle",
     "authors": [
         {
             "name": "Guilherme Donato",

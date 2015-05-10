@@ -1,6 +1,6 @@
 <?php
 
-namespace Donato\NinjaMutexBundle;
+namespace NinjaMutex\NinjaMutexBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
