@@ -1,0 +1,17 @@
+{
+    "name": "guilhermednt/ninja-mutex-bundle",
+    "description": "Very simple bundle wrapper for ninja-mutex",
+    "require": {
+        "arvenil/ninja-mutex": "0.4.*"
+    },
+    "autoload": {
+        "psr-0": { "NinjaMutex\\NinjaMutexBundle": "" }
+    },
+    "target-dir": "NinjaMutex/NinjaMutexBundle",
+    "authors": [
+        {
+            "name": "Guilherme Donato",
+            "email": "guilhermednt@users.noreply.github.com"
+        }
+    ]
+}

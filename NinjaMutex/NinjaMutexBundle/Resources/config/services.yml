@@ -1,0 +1,25 @@
+parameters:
+    # Defaults to Memcached adapter
+    ninja_mutex.adapter.class: NinjaMutex\Lock\MemcacheLock
+    ninja_mutex.implementor.name: memcached
+    
+    ninja_mutex.class: NinjaMutex\MutexFabric
+
+services:
+    ninja_mutex.memcached:
+        class: Memcached
+        arguments:
+            persistent_id: %session_prefix%
+        calls:
+            - [ addServer, [ %memcached_host%, %memcached_port% ]]
+    
+    ninja_mutex.adapter:
+        class: %ninja_mutex.adapter.class%
+        arguments:
+            - @ninja_mutex.memcached
+        
+    ninja_mutex:
+        class: %ninja_mutex.class%
+        arguments:
+            - @ninja_mutex.adapter
+            - %ninja_mutex.implementor.name%
