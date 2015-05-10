@@ -1,6 +1,6 @@
 <?php
 
-namespace NinjaMutex\NinjaMutexBundle\DependencyInjection;
+namespace Donato\NinjaMutexBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

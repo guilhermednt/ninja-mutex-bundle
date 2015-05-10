@@ -1,6 +1,6 @@
 <?php
 
-namespace NinjaMutex\NinjaMutexBundle\DependencyInjection;
+namespace Donato\NinjaMutexBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
