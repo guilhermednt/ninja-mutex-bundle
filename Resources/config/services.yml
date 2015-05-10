@@ -1,6 +1,6 @@
 parameters:
     # Defaults to Memcached adapter
-    ninja_mutex.adapter.class: NinjaMutex\Lock\MemcacheLock
+    ninja_mutex.adapter.class: NinjaMutex\Lock\MemcachedLock
     ninja_mutex.implementor.name: memcached
     
     ninja_mutex.class: NinjaMutex\MutexFabric
