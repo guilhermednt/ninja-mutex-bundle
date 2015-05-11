@@ -6,17 +6,15 @@ parameters:
     ninja_mutex.class: NinjaMutex\MutexFabric
 
 services:
-    ninja_mutex.memcached:
-        class: Memcached
-        arguments:
-            persistent_id: %session_prefix%
-        calls:
-            - [ addServer, [ %memcached_host%, %memcached_port% ]]
+#    ninja_mutex.memcached:
+#        class: Memcached
+#        calls:
+#            - [ addServer, [ %memcached_host%, %memcached_port% ]]
     
     ninja_mutex.adapter:
         class: %ninja_mutex.adapter.class%
         arguments:
-            - @ninja_mutex.memcached
+            - @session.memcached
         
     ninja_mutex:
         class: %ninja_mutex.class%
